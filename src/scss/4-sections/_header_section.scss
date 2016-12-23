@@ -15,7 +15,6 @@ header {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
     }
-
     .top-head {
         z-index: 90;
         display: inline-block;
@@ -23,37 +22,37 @@ header {
         display: flex;                 
         justify-content: space-between;
         margin: 0.5% 7.5%;
-
         .top-phone {
-          float: left;  
-        }
-       
+          float: left; 
+          @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }       
         p {
             font-size: 1.3rem; 
-
             span {
                 padding-left: 10px;
+                @media only screen and (max-width: 768px) {     
+                    display: none;    
+                }
             }
-
             a {
-
                 .fa {
                     font-size: 1.6rem;
                 }
-
                 .fa-facebook { 
-
                     &:after {   
                       content: "";  
                       display: table;    
                       clear: both;
+                    }
+                    @media only screen and (max-width: 768px) {     
+                    display: none;    
                     }   
-                     
                 }
             }
         }
-    } 
-  
+    }   
     .logo {
         position: absolute;
         color: #fff;
@@ -62,45 +61,53 @@ header {
         top: 22%;
         left: 6%;
         z-index: 900;
-        
+        @media only screen and (max-width: 768px) {
+            top: 4%;
+            left: 5%;
+        } 
         img {
-
             @media only screen and (max-width: 768px) {
-                top: 4%;
-                width: 70%;
-                height: 70%;
+                width: 50%;
+                height: 50%;
             } 
-        }
-        
-          
+        }        
     }
-
     .quote {
         z-index: 10;
         text-align: center;
         margin: 120px auto;
-     }   
-
+    }   
     h1 {
         font-family: 'playfair_displayregular';
         font-size: 6rem;
-
         @media only screen and (max-width: 768px) {
             font-size: 4.5rem;
-            padding-top: 40px;
         } 
-
     }
-
     h2 {
         font-size: 3rem;
         margin-top: -20px;
-
         @media only screen and (max-width: 768px) {
             font-size: 2rem;
             padding: 0 10px;
         } 
-
+    }
+    .bottom-head {
+        z-index: 90;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.6rem;
+        @media only screen and (min-width: 768px) {
+            display: none;
+        } 
+        p {
+            a {
+            font-size: 1.8rem;
+                .fa {
+                    font-size: 1.8rem; 
+                }
+            }
+        }     
     }
 }
 

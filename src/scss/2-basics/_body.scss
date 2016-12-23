@@ -1,7 +1,7 @@
 // COLORS
 $text-color: #fff;
 $bg-color: #ccc;
-$h-color: #ed6247;
+$h-color: #d2c729;
 
 // BODY
 html, body {
@@ -32,7 +32,7 @@ a:not(.logo) {
 	cursor: pointer;
 
 	&:hover, &:focus {
-		color: darken($text-color, 10%);
+		color: darken($bg-color, 10%);
 	}
 
 }
