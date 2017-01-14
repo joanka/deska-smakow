@@ -1,6 +1,6 @@
 .main-head {	
 	@media only screen and (min-width: 769px) {
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	height: 160px;
 	width: 100%;
@@ -26,10 +26,6 @@
 		    li {
 		    	display: inline-block;		    
 		    	padding-left: 4%;
-		    	a:hover {
-		    		color: $h-color;
-		    		border-bottom: 1px solid $h-color;
-		    	}
 		    }	    		    	
 	    }   	  
 	@media only screen and (max-width: 768px) {		

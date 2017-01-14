@@ -1,7 +1,9 @@
 // COLORS
 $text-color: #fff;
-$bg-color: #ccc;
-$h-color: #d2c729;
+$bg-color: #fff;
+$f-color: #333333;
+$h-color: #d8ce3e;
+$n-color: rgba(31, 15, 15, 1);
 
 // BODY
 html, body {
@@ -24,22 +26,30 @@ body {
 	box-sizing: border-box;	
 }
 
+h1 {
+	font-family: 'playfair_displayregular';
+	font-size: 3.2rem;
+}
+
 //LINKS
 a:not(.logo) {
 	color: inherit;
 	text-decoration: none;
 	outline: 0;
 	cursor: pointer;
-
-	&:hover, &:focus {
-		color: darken($bg-color, 10%);
+	border-bottom: 1px solid transparent;
+	&:hover {
+		color: $h-color;
+		transition: color 0.1s linear;
 	}
-
+	&:focus {
+		color: $h-color;
+		border-bottom: 1px solid $h-color;
+		transition: border-bottom 0.3s linear;	    		
+	}	
 }
 
 
-
- 
 
 
  

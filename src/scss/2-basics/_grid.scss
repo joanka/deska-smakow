@@ -1,0 +1,32 @@
+// @media screen and (max-width: 500px)
+
+@mixin row-small() {	
+	flex-direction: column;
+}
+
+@mixin col-small() {
+	flex: 1;
+}
+
+// @media screen and (min-width: 500px)
+@mixin row-medium() {
+	display: flex;
+	flex-flow: row wrap;		
+}
+
+@mixin col-medium() {
+	flex: 1 1 40%;
+}
+
+//@media screen and (min-width: 800px)
+@mixin col-big() {
+	flex: 1;
+}
+
+
+
+
+
+
+
+
