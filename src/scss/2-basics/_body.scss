@@ -4,6 +4,7 @@ $bg-color: #fff;
 $f-color: #333333;
 $h-color: #d8ce3e;
 $n-color: rgba(31, 15, 15, 1);
+$i-color: #533834;
 
 // BODY
 html, body {
@@ -26,7 +27,7 @@ body {
 	box-sizing: border-box;	
 }
 
-h1 {
+h1, h2 {
 	font-family: 'playfair_displayregular';
 	font-size: 3.2rem;
 }

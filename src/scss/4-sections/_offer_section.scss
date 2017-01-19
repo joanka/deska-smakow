@@ -1,0 +1,234 @@
+#oferta {
+	background: url("../img/bg-1.jpg") no-repeat center;
+	width: 100%;
+	background-size: cover;  
+	display: inline-block;
+	text-align: center;
+	padding: 30px 0 60px 0;
+	position: relative;
+	&:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    h2 {
+		text-align: center;
+		padding-top: 10px;		
+		letter-spacing: 1px;
+		z-index: 100;
+	}    		
+}
+.offer-box {
+	z-index: 90;
+	margin: 0 9.5%;
+	position: relative;
+	.offer-item {		
+		margin-top: -20px;
+		&:not(.active-item){
+		  display: none;
+		  opacity: 0;
+		}
+		h2 {
+			font-size: 2.3rem;
+		}
+		figure {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		figure img  {
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+			@media only screen and (max-width: 1300px) {
+				width: 160px;
+				height: 160px;
+				margin-top: 20px;		
+			}
+			@media only screen and (max-width: 900px) {
+				width: 160px;
+				height: 160px;
+				margin-top: 30px;	
+			}
+		}
+		figcaption {
+			max-width: 600px;
+			padding-left: 40px;			
+			padding-top: 10px;
+			padding-bottom: 20px;
+			text-align: left;
+			line-height: 2rem;
+			@media only screen and (max-width: 1300px) {
+				width: 70%;
+				max-width: 550px;
+				padding-left: 30px;	
+			}						
+			p {
+				font-family: 'montserratregular', sans-serif;
+				padding-bottom: 5px;
+				text-transform: uppercase;
+				font-size: 1.7rem;
+			}
+		}
+		@media only screen and (max-width: 960px) {			
+			figure img  {	
+				width: 150px;
+				height: 150px;	
+			}
+			figcaption {
+				font-size: 1.3rem;
+			}	
+		}
+		@media only screen and (max-width: 768px) {
+			figure {
+				flex-direction: column;
+				align-items: center;
+			}
+			figure img  {	
+				width: 140px;
+				height: 140px;
+			}
+			figcaption {
+				padding-bottom: 10px;
+				padding-top: 20px;
+				font-size: 1.5rem;
+				width: 100%;
+				padding-left: 0;
+				text-align: center;
+				h2 {
+					padding-bottom: 15px;
+				}
+			}	
+	    }
+	}
+	span {
+		display: block;
+		font-size: 3rem;
+		position: absolute;
+		top: 50%;
+		margin-top: -40px;
+		width: 40px;
+		height: 40px;		
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		line-height: 3.4rem;
+		cursor: pointer;
+		border: 1px solid transparent;
+		color: $bg-color;
+		&:hover {
+			transition: all 0.3s linear;
+			color: $h-color;
+			box-shadow: 0px 0px 3px 0px $h-color;
+			background-color: rgba(0, 0, 0, 0.1);
+		}		
+	}
+	.control-prev {
+		left: 40px;
+		@media only screen and (max-width: 1220px) {
+			left: 0px;			
+		}
+	}
+	.control-next {
+		right: 40px;
+		transform: rotate(180deg);
+		@media only screen and (max-width: 1220px) {
+			right: 0px;
+		}
+	}
+	@media only screen and (max-width: 1000px) {
+		span {
+			font-size: 2rem;
+			width: 30px;
+			height: 30px;
+			line-height: 2.6rem;
+
+		}
+	}	
+	@media only screen and (max-width: 768px) {
+		margin: 0;
+		.offer-item {
+			min-height: 400px;
+		}
+		.offer-item figure {
+			padding: 0;
+		}
+		span {
+			margin-top: 100px;
+			top: -6%;
+		}
+		.control-prev {
+			left: 125px;
+		}
+		.control-next {
+			right: 125px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.control-prev {
+			left: 85px;
+		}
+		.control-next {
+			right: 85px;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		.control-prev {
+			left: 45px;
+		}
+		.control-next {
+			right: 45px;
+		}
+	}
+}
+.gallery-rotator {
+	margin-top: -18px;	
+	.dot-buttons li {
+		width: 13px;
+	    height: 13px;
+	    background-color: rgba(255, 255, 255, 0.1);
+	    border: 2px solid rgba(255, 255, 255, 0.6);
+	    border-radius: 50%;
+	    margin: 7px;
+	    display: inline-block;
+	    box-sizing: border-box;
+	    &:hover {
+	    	border: 2px solid $h-color;
+			background-color: rgba(0, 0, 0, 0.1);
+	    }
+	}
+	.dot-buttons li.active-item {
+		background-color: $h-color;
+		width: 14px;
+		height: 14px;
+		border: 2px solid rgba(0, 0, 0, 0.2);
+	}	
+	@media only screen and (max-width: 768px) {
+		margin-left: -40px;
+		margin-top: -30px;
+		margin-bottom: 20px;		
+	}	
+	@media only screen and (max-width: 550px) {
+		margin-top: 0px;		
+	}	
+}
+
+.active-item {
+	animation: fadeEffect 3s;
+}
+
+@keyframes fadeEffect {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+
+
+		
