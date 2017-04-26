@@ -2,9 +2,8 @@
 	background: url("../img/bg-1.jpg") no-repeat center;
 	width: 100%;
 	background-size: cover;  
-	display: inline-block;
 	text-align: center;
-	padding: 30px 0 60px 0;
+	padding: 20px 0 60px 0;
 	position: relative;
 	&:after {
         content: '';
@@ -18,24 +17,25 @@
         background-color: rgba(0, 0, 0, 0.4);
     }
     h2 {
+    	position: relative;
 		text-align: center;
-		padding-top: 10px;		
+		padding-top: 2px;		
 		letter-spacing: 1px;
 		z-index: 100;
-	}    		
+	}   		
 }
 .offer-box {
 	z-index: 90;
 	margin: 0 9.5%;
 	position: relative;
 	.offer-item {		
-		margin-top: -20px;
+		margin-top: -8px;
+		@media only screen and (max-width: 768px) {
+			margin-top: -18px;
+		}
 		&:not(.active-item){
 		  display: none;
 		  opacity: 0;
-		}
-		h2 {
-			font-size: 2.3rem;
 		}
 		figure {
 			display: flex;
@@ -48,7 +48,7 @@
 			width: 180px;
 			height: 180px;
 			border-radius: 50%;
-			box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+			box-shadow: 0px 0px 10px 0px rgba(84, 86, 86, 0.6);
 			@media only screen and (max-width: 1300px) {
 				width: 160px;
 				height: 160px;
@@ -100,7 +100,7 @@
 			figcaption {
 				padding-bottom: 10px;
 				padding-top: 20px;
-				font-size: 1.5rem;
+				font-size: 1.50rem;
 				width: 100%;
 				padding-left: 0;
 				text-align: center;
@@ -150,7 +150,6 @@
 			width: 30px;
 			height: 30px;
 			line-height: 2.6rem;
-
 		}
 	}	
 	@media only screen and (max-width: 768px) {
@@ -181,6 +180,9 @@
 		}
 	}
 	@media only screen and (max-width: 480px) {
+		span {
+			top: -4%;
+		}
 		.control-prev {
 			left: 45px;
 		}
@@ -190,7 +192,6 @@
 	}
 }
 .gallery-rotator {
-	margin-top: -18px;	
 	.dot-buttons li {
 		width: 13px;
 	    height: 13px;
@@ -213,14 +214,12 @@
 	}	
 	@media only screen and (max-width: 768px) {
 		margin-left: -40px;
-		margin-top: -30px;
-		margin-bottom: 20px;		
+		margin-bottom: 20px;
 	}	
 	@media only screen and (max-width: 550px) {
 		margin-top: 0px;		
 	}	
 }
-
 .active-item {
 	animation: fadeEffect 3s;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,12 @@
 	<meta name="description" content="Najlepsza w mieście! Pizza. Oferujemy naszym klientom dowóz pizzy na telefon.">
 	<meta name="keywords" content="pizza dowóz wasilków, pizza na wynos wasilków, obiady dowóz wasilków, imprezy wasilków, rezerwacja sali wasilków">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/favicon.png"> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="home">
 		<div class="top-head">
 			<p class="top-phone"><a><i class="fa fa-phone" aria-hidden="true"></i> 577 033 600</a><span><i class="fa fa-home" aria-hidden="true"></i> ul. Kościelna 58 Wasilków</span></p>	
 			<p><a><i class="fa fa-facebook" aria-hidden="true"></i></a></p>				
@@ -21,11 +21,11 @@
 			<a href="#" class="logo"><img src="img/logo-white.png" alt="Deska Smaków"/></a>
 			<nav class="main-nav">
 				<ul>
-					<li><a href="#">HOME</a></li>
+					<li><a href="#home">HOME</a></li>
 					<li><a href="#menu">MENU</a></li>
-					<li><a href="#uslugi">OFERTA</a></li>
-					<li><a href="#">DOSTAWA</a></li>
-					<li><a href="#">KONTAKT</a></li>
+					<li><a href="#oferta">OFERTA</a></li>
+					<li><a href="#galeria">GALERIA</a></li>
+					<li><a href="#kontakt">KONTAKT</a></li>
 				</ul>
 			</nav>
 			<button class="nav-btn">
@@ -40,11 +40,10 @@
 		<h2>Zapraszamy na pyszną pizzę i domowe obiady.</h2>
 		</div>
 		<div class="bottom-head">
-			<p>Zamów jedzenie przez telefon.</p>
+			<p>Zamów jedzenie przez telefon</p>
 			<p class="top-phone"><a><i class="fa fa-phone" aria-hidden="true"></i> 577 033 600</a></p>
 		</div>	
 	</header>
-
 	<!-- Menu -->
 	<section id="menu">
 		<h2>Menu</h2>
@@ -59,8 +58,7 @@
 					<div id="polecane" class="tab">
 						<div class="menu-item">
 							<div class="menu-toptext">
-								<h3 class="menu-name">Pielmieni</h3>				
-								<span class="menu-dots"></span>
+								<h3 class="menu-name">Pielmieni</h3>
 								<span class="menu-price">12 zł</span>
 							</div>							
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -68,7 +66,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Tortilla</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -76,7 +73,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Burger + Frytki</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -84,7 +80,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Sałatka z grillowanym kurczakiem</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -92,7 +87,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Zestaw dziecięcy</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">10 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -104,7 +98,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -112,7 +105,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -120,7 +112,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -128,7 +119,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -136,7 +126,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -144,7 +133,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -152,7 +140,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -160,18 +147,15 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">MARGHERITA</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
 						</div>					
 					</div>
-
 					<div id="obiady" class="tab">
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Wątróbka z ziemniakami</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -179,7 +163,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Gulasz z kaszą</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -187,7 +170,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Boczek pieczony z ziemniakami</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -195,7 +177,6 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Mielony z ziemniakami</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
@@ -203,120 +184,153 @@
 						<div class="menu-item">
 							<div class="menu-toptext">
 								<h3 class="menu-name">Babka ziemniaczana z ogórkiem</h3>
-								<span class="menu-dots"></span>
 								<span class="menu-price">14 zł</span>
 							</div>
 							<span class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ultricies hendrerit.</span>
 						</div>
 						<div class="menu-item"></div>			
 					</div>
-
 					<div id="napoje" class="tab">
 						<div class="menu-item">
-							<h3 class="menu-name">Espresso</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">4,50 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Espresso</h3>
+								<span class="menu-price">4,50 zł</span>
+							</div>							
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Latte</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">7,00 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Latte</h3>
+								<span class="menu-price">7,00 zł</span>
+							</div>							
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Herbata</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">4,00 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Herbata</h3>
+								<span class="menu-price">4,00 zł</span>	
+							</div>						
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Woda</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">3,00 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Woda</h3>
+								<span class="menu-price">3,00 zł</span>
+							</div>							
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Napoje gazowane</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">4,50 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Napoje gazowane</h3>
+								<span class="menu-price">4,50 zł</span>
+							</div>							
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Sok cappy</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">4,00 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Sok cappy</h3>						
+								<span class="menu-price">4,00 zł</span>
+							</div>				
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Burn</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">5,00 zł</span>							
+							<div class="menu-toptext">
+								<h3 class="menu-name">Burn</h3>
+								<span class="menu-price">5,00 zł</span>
+							</div>				
 						</div>	
 						<div class="menu-item">
-							<h3 class="menu-name">Grzaniec</h3>
-							<span class="menu-dots"></span>
-							<span class="menu-price">8 zł</span>			
+							<div class="menu-toptext">
+								<h3 class="menu-name">Grzaniec</h3>
+								<span class="menu-price">8 zł</span>
+							</div>			
 						</div>	
-
 					</div>
-
 				</div>
-			</div>
-		
+			</div>		
 	</section>
-
 	<!-- Oferta -->
 	<section id="oferta">
 		<h2>Oferta</h2>
-			<div class="offer-box">			
-				<div class="offer-items">
-					<div class="offer-item active-item">					
-						<figure>
-							<img src="img/imprezy.jpg" alt="">
-							<figcaption>
-								<p>Imprezy okolicznościowe</p>
-								Jeżeli masz ochotę spędzić miło czas z przyjaciółmi lub rodziną zapraszamy do nas. U nas zorganizujesz komunię, chrzciny, imieniny, małą imprezę towarzyską, odprężysz się i dobrze zjesz. Dbamy o miłą atmosferę i smaczne jedzenie. Wystarczy, że zadzwonisz i spytasz o wolny termin, resztą zajmiemy się my.
-							</figcaption>
-						</figure>
-					</div>
-
-					<div class="offer-item">					
-						<figure>
-							<img src="img/pizza-oferta2.jpg" alt="">
-							<figcaption>
-								<p>Pyszna pizza i obiady jak u mamy</p>
-								Nasz lokal to doskonałe miejsce na rodzinny obiad czy posiłek w towarzystwie przyjaciół oraz znajomych. Gotujemy smacznie i niedrogo a wszystkie potrawy przygotowujemy ze świeżych produktów dostarczanych od sprawdzonych i uznanych dostawców.
-							</figcaption>
-						</figure>
-					</div>
-
-					<div class="offer-item">
-						<figure>
-							<img src="img/zam-tel.jpg" alt="">
-							<figcaption>
-								<p>Zamówienia na telefon</p>
-								Oferujemy bogate menu na wynos i z dowozem do domu lub firmy. Dopadł Ciebie głód a lodówka jest pusta ? W takiej sytuacji zadzwoń do nas i wybierz coś dla siebie. Smaczne są nie tylko pizze. W menu mamy jeszcze dania obiadowe, sałatki, makarony i inne pyszne specjały naszej kuchni.
-							</figcaption>
-						</figure>
-					</div>
-
-					<div class="offer-item">
-						<figure>
-							<img src="img/catering.jpg" alt="">
-							<figcaption>
-								<p>Catering</p>
-								Oferujemy usługi cateringowe dla firm i osób prywatnych. Gotowe posiłki dowieziemy w umówionym czasie pod wskazany adres. Serdecznie zapraszamy do skorzystania z naszej oferty.
-							</figcaption>
-						</figure>
-					</div>
+		<div class="offer-box">			
+			<div class="offer-items">
+				<div class="offer-item active-item">					
+					<figure>
+						<img src="img/imprezy-2.jpg" alt="">
+						<figcaption>
+							<p>Imprezy okolicznościowe</p>
+							Jeżeli masz ochotę spędzić miło czas z przyjaciółmi lub rodziną zapraszamy do nas. U nas zorganizujesz komunię, chrzciny, imieniny, małą imprezę towarzyską, odprężysz się i dobrze zjesz. Dbamy o miłą atmosferę i smaczne jedzenie. Wystarczy, że zadzwonisz i spytasz o wolny termin, resztą zajmiemy się my.
+						</figcaption>
+					</figure>
 				</div>
-				<span class="control-prev">&laquo</span>
-				<span class="control-next">&laquo</span>
-				<div class="gallery-rotator">
-				<ul class="dot-buttons">
-					<li class="active-item"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				</div>	
-			</div>			
+				<div class="offer-item">					
+					<figure>
+						<img src="img/pizza-oferta2.jpg" alt="">
+						<figcaption>
+							<p>Pyszna pizza i obiady jak u mamy</p>
+							Nasz lokal to doskonałe miejsce na rodzinny obiad czy posiłek w towarzystwie przyjaciół oraz znajomych. Gotujemy smacznie i niedrogo a wszystkie potrawy przygotowujemy ze świeżych produktów dostarczanych od sprawdzonych i uznanych dostawców.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="offer-item">
+					<figure>
+						<img src="img/zam-tel.jpg" alt="">
+						<figcaption>
+							<p>Zamówienia na telefon</p>
+							Oferujemy bogate menu na wynos i z dowozem do domu lub firmy. Dopadł Ciebie głód a lodówka jest pusta ? W takiej sytuacji zadzwoń do nas i wybierz coś dla siebie. Smaczne są nie tylko pizze. W menu mamy jeszcze dania obiadowe, sałatki, makarony i inne pyszne specjały naszej kuchni.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="offer-item">
+					<figure>
+						<img src="img/catering.jpg" alt="">
+						<figcaption>
+							<p>Catering</p>
+							Oferujemy usługi cateringowe dla firm i osób prywatnych. Gotowe posiłki dowieziemy w umówionym czasie pod wskazany adres. Serdecznie zapraszamy do skorzystania z naszej oferty.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<span class="control-prev">&laquo;</span>
+			<span class="control-next">&laquo;</span>
+			<div class="gallery-rotator">
+			<ul class="dot-buttons">
+				<li class="active-item"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			</div>	
+		</div>			
 	</section>
+	<!-- Galeria -->
+	<section id="galeria">
+		<div class="call-action">
+			<p>Zamów jedzenie przez telefon</p>
+			<p class="top-phone"><a><i class="fa fa-phone" aria-hidden="true"></i> 577 033 600</a></p>
+		</div>
+		<div class="photo-gal">		
+			<div class="gal-box">
+				<img src="img/gallery/gal-11.jpg" alt="">
+				<span class="img-txt"><p class="dish-name">Danie 1</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nunc id nisl pellentesque, sit amet efficitur velit posuere. Etiam tempus est nec eros vulputate blandit.</p></span>
+			</div>
+			<div class="gal-box">
+				<img src="img/gallery/gal-1.jpg" alt="">
+				<span class="img-txt"><p class="dish-name">Danie 2</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nunc id nisl pellentesque, sit amet efficitur velit posuere. Etiam tempus est nec eros vulputate blandit.</p></span>
+			</div>
+			<div class="gal-box">
+				<img src="img/gallery/gal-2.jpg" alt="">
+				<span class="img-txt"><p class="dish-name">Danie 3</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nunc id nisl pellentesque, sit amet efficitur velit posuere. Etiam tempus est nec eros vulputate blandit.</p></span>
+			</div>
+			<div class="gal-box">
+				<img src="img/gallery/gal-7.jpg" alt="">
+				<span class="img-txt"><p class="dish-name">Danie 4</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nunc id nisl pellentesque, sit amet efficitur velit posuere. Etiam tempus est nec eros vulputate blandit.</p></span>
+			</div>
+			<div class="gal-box">
+				<img src="img/gallery/gal-8.jpg" alt="">
+				<span class="img-txt"><p class="dish-name">Danie 5</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nunc id nisl pellentesque, sit amet efficitur velit posuere. Etiam tempus est nec eros vulputate blandit.</p></span>
+			</div>
+			<div class="gal-box">
+				<img src="img/gallery/gal-6.jpg" alt="">
+				<span class="img-txt"><p class="dish-name">Danie 6</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nunc id nisl pellentesque, sit amet efficitur velit posuere. Etiam tempus est nec eros vulputate blandit.</p></span>
+			</div>						
+		</div>
+	</section>
+	
 
 	
 	

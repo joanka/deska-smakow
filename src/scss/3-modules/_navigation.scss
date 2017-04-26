@@ -9,6 +9,7 @@
 	}
 }
 .main-nav {
+	z-index: 1000;
 	text-align: right;
 	font-family: 'montserratregular', sans-serif;
 	font-size: 1.5rem;
@@ -82,12 +83,13 @@
 	        }
   		}
   	}
-  .nav-opened {
-  	z-index: 900;
+  .nav-opened { 	
   	.logo {
   		position: fixed;
+  		z-index: 1100;
   	}
   	.close-icon {
+  		z-index: 1000;
   		display: block;
   		position: fixed;
 	    top: 15px;
@@ -141,15 +143,15 @@
         right: 0;
         height: auto;
         li {       	
-        	padding: 4% 0 4% 0;
+        	line-height: 6rem;
 		    font-size: 2rem;
 		    cursor: pointer;
 		    &:first-child {
-		    	padding-top: 80px;
+		    	padding-top: 60px;
 		    }
 		    &:last-child {
 		    	border-bottom: none;
-		    	padding-bottom: 60px;
+		    	padding-bottom: 50px;
 			}
 		    a {
 		      text-decoration: none;
