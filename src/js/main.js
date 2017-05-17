@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  //mobile nav
+  // Mobile nav
 	$('.nav-btn').on('click', function() {
       $('.main-head').toggleClass('nav-opened'); 
     });
@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('.main-head').toggleClass('nav-opened');    
   });
 
-  // menu tabs
+  // Menu tabs
   var tabs = $('.tabs-menu');
   $('.tab').not(":first").hide();
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
   	$(this.hash).fadeIn(400).siblings().hide();
   });
 
-  // slider oferta
+  // Slider oferta
   $('.control-next, .control-prev').on('click', function() {
     var activeItem = $('.offer-items').find('.active-item'),
         position = $('.offer-items').children().index(activeItem),
@@ -56,17 +56,29 @@ $(document).ready(function() {
     $this.addClass('active-item');
   });
 
-  
+  // Image change on hover
+  $(".img-first img").on({
+    "mouseenter":function() {
+      $(this).attr('src', '../img/pyszne-logo-h.jpg');
+    },
+    "mouseleave": function() {
+      $(this).attr('src','../img/pyszne-logo.png');
+    }
+  });
+  $(".img-second img").on({
+    "mouseenter":function() {
+      $(this).attr('src', '../img/pizza-portal-h.jpg');
+    },
+    "mouseleave": function() {
+      $(this).attr('src','../img/pizza-portal.png');
+    }
+  });
 
+
+
+  
 });
 
 
 
 
-
-
-
-
-
-
-  

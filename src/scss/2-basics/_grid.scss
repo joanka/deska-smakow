@@ -20,6 +20,8 @@
 
 //@media screen and (min-width: 800px)
 @mixin col-big() {
+	display: flex;
+	flex-flow: row wrap;	
 	flex: 1;
 }
 
