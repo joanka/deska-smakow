@@ -4,7 +4,7 @@ header {
     height: 100vh;
     position: relative;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
     &:after {
         content: '';
         position: absolute;
@@ -17,7 +17,7 @@ header {
         background-color: rgba(0, 0, 0, 0.3);
     }    
     .top-head {
-        z-index: 90;
+        z-index: 1100;
         display: inline-block;
         text-align: right;
         display: flex;                 
@@ -52,7 +52,13 @@ header {
                 }
             }
         }
-    }   
+    } 
+    .sticky-head {        
+        @media only screen and (min-width: 900px) {
+            position: fixed; 
+            top: 5px; 
+        }
+    }  
     .logo {
         position: absolute;
         color: #fff;
