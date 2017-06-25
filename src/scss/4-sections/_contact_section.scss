@@ -1,0 +1,114 @@
+#kontakt {
+    background-image: linear-gradient(rgba(148,134,118,0.9), rgba(148,134,118,0.9)), url("../img/bg-3s.jpg"); 
+    background-size: cover;
+    padding: 60px 30px 70px;    
+    h2 {
+        margin: 0;
+        text-align: center;
+    } 
+    .contact-section {
+        @include col-big();
+        justify-content: center;
+        font-size: 1.7rem;
+        padding-top: 3vw;
+        .contact-form, .info-other {
+            margin: 0 3vw;
+            min-width: 280px;
+            a {
+                &:hover {
+                    color: inherit;
+                }
+                &:focus {
+                    color: inherit;
+                    border-bottom: none;
+                }
+            }
+        }
+        .contact-form {  
+            font-style: normal;
+            dd {
+                margin-top: -25px;
+                padding-bottom: 15px;
+                
+            }            
+            .map-icon:before {
+              content: "\f041";
+              font-family: FontAwesome;             
+            }
+            .phone-icon:before {
+              content: "\f095";
+              font-family: FontAwesome;              
+            }
+            .mail-icon:before {
+              content: "\f0e0";
+              font-family: FontAwesome;              
+            }            
+        } 
+        .big-text {
+            font-family: 'montserratregular';
+            font-size: 2.1rem;
+        }
+        .fb-icon:before {
+            content: "\f09a";
+            font-family: FontAwesome;
+            padding-left: 8px;
+        }
+        .fb-icon {
+            &:hover {
+                color: #3b5998;
+                transition: color 0.1s linear;
+                cursor: pointer;
+              } 
+        }
+        .info-other:last-child {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px 10px 30px;
+            background-color: rgba(31, 15, 15, 0.8);
+            img:first-child {
+                padding-bottom: 5px;
+            }
+        }        
+    }
+  box-shadow: 0 0 20px rgba(31, 15, 15, 0.6);  
+}
+
+@media only screen and (max-width: 1190px) {
+    #kontakt .contact-section {
+        .info-other:last-child {
+            margin-top: 3vw;
+            margin-bottom: 5vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   #kontakt .contact-section {
+    @include row-small();
+    align-items: center;
+    text-align: center;
+        .contact-form {
+            dd:last-child {
+                padding-bottom: 0;
+            }  
+            .map-icon:before {
+                display: block;
+                transform: translateX(-58px); 
+            }
+            .phone-icon:before {
+                display: block;
+                transform: translateX(-75px); 
+            }
+            .mail-icon:before {            
+                display: block;
+                transform: translateX(-125px);
+            }
+        }
+        .info-other:last-child {
+            margin-top: 9vw;
+            margin-bottom: 5vw;
+        }  
+
+    }
+
+}

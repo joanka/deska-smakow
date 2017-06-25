@@ -228,9 +228,7 @@ a:not(.logo) {
   border-bottom: 1px solid transparent; }
   a:not(.logo):hover {
     color: #87c427;
-    transition: color 0.1s linear; }
-  a:not(.logo):focus {
-    color: #87c427;
+    transition: color 0.1s linear;
     border-bottom: 1px solid #87c427;
     transition: border-bottom 0.3s linear; }
 
@@ -243,8 +241,7 @@ a:not(.logo) {
   padding: 0;
   position: absolute;
   width: 1px;
-  white-space: nowrap;
-  /* 1 */ }
+  white-space: nowrap; }
 
 @media only screen and (min-width: 769px) {
   .main-head {
@@ -291,6 +288,8 @@ a:not(.logo) {
     .main-nav ul li {
       display: inline-block;
       padding-left: 4%; }
+    .main-nav ul .active a {
+      color: #87c427; }
   @media only screen and (max-width: 768px) {
     .main-nav {
       height: 0px;
@@ -339,6 +338,10 @@ a:not(.logo) {
         top: 20px; }
       .nav-btn span:after {
         bottom: 19px; }
+    .nav-btn span.black {
+      background-color: #1f0f0f; }
+      .nav-btn span.black:before, .nav-btn span.black:after {
+        background-color: #1f0f0f; }
   .nav-opened .logo {
     position: fixed;
     z-index: 1100; }
@@ -413,7 +416,9 @@ a:not(.logo) {
           color: #fff;
           padding: 12px; }
           .nav-opened .main-nav ul li a:hover, .nav-opened .main-nav ul li a:focus {
-            color: #87c427; } }
+            color: #87c427; }
+      .nav-opened .main-nav ul .active a {
+        color: #87c427; } }
 
 #map {
   height: 50vh;
@@ -477,6 +482,8 @@ header {
             display: none; } }
       header .top-head p a .fa {
         font-size: 1.6rem; }
+      header .top-head p a .fa-facebook:hover {
+        color: #3b5998; }
       header .top-head p a .fa-facebook:after {
         content: "";
         display: table;

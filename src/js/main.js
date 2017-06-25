@@ -13,8 +13,15 @@ $(document).ready(function() {
     $('.main-head').toggleClass('nav-opened');    
   });
 
-  //Sticky nav
-  $(window).scroll(function() {
+  // Change mobile nav color on menu section and sticky nav
+  $(window).scroll(function() {  
+    var menusection = $('#menu').offset().top;
+    var offersection = $('#oferta').offset().top;
+    if ($(document).scrollTop() >= menusection && $(document).scrollTop() < offersection) {   
+     $('.nav-btn span').addClass('black');
+    } else {
+      $('.nav-btn span').removeClass('black');
+    } 
     if($(this).scrollTop() > 80 ) {
       $('.main-head').addClass('sticky-nav');
       $('.top-head .top-phone').addClass('sticky-head');
@@ -286,10 +293,49 @@ $(document).ready(function() {
 
   window.onload = initMap;
 
+// Smooth scroll
+
+$( '.main-nav-list a' ).on('click', function( e ) {
+  e.preventDefault();
+  console.log(e);
+  console.log(String.fromCharCode(e.which));
+} );
+
+
+$(".main-nav-list").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    },500);
+});
+
+// Change active menu item on page scroll
+    var lastId,
+      topMenu = $(".main-nav"),
+      topMenuHeight = topMenu.outerHeight()+15,     
+      menuItems = topMenu.find("a"),      
+      scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+      });
+
+    $(window).scroll(function(){
+     var fromTop = $(this).scrollTop()+topMenuHeight; 
+     var cur = scrollItems.map(function(){
+       if ($(this).offset().top < fromTop)
+         return this;
+     });
+     cur = cur[cur.length-1];
+     var id = cur && cur.length ? cur[0].id : "";
+       if (lastId !== id) {
+          lastId = id;
+          menuItems
+           .parent().removeClass("active")
+           .end().filter("[href='#"+id+"']").parent().addClass("active");
+       }                   
+    }); 
 
 
 });
-
-
-
 

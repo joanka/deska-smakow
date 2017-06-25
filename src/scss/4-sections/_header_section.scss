@@ -15,7 +15,7 @@ header {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
-    }    
+    }      
     .top-head {
         z-index: 1100;
         display: inline-block;
@@ -40,7 +40,10 @@ header {
                 .fa {
                     font-size: 1.6rem;
                 }
-                .fa-facebook { 
+                .fa-facebook {
+                    &:hover {
+                        color: #3b5998;
+                    } 
                     &:after {   
                       content: "";  
                       display: table;    

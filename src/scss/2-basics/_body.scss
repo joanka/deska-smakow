@@ -48,11 +48,8 @@ a:not(.logo) {
 	&:hover {
 		color: $h-color;
 		transition: color 0.1s linear;
-	}
-	&:focus {
-		color: $h-color;
 		border-bottom: 1px solid $h-color;
-		transition: border-bottom 0.3s linear;	    		
+		transition: border-bottom 0.3s linear;	
 	}	
 }
 
@@ -66,7 +63,7 @@ a:not(.logo) {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
 }
 
  
