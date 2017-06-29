@@ -39,7 +39,8 @@ h2 {
 }
 
 //LINKS
-a:not(.logo) {
+
+a:not(.no-hover) {
 	color: inherit;
 	text-decoration: none;
 	outline: 0;
@@ -47,10 +48,7 @@ a:not(.logo) {
 	border-bottom: 1px solid transparent;
 	&:hover {
 		color: $h-color;
-		transition: color 0.1s linear;
-		border-bottom: 1px solid $h-color;
-		transition: border-bottom 0.3s linear;	
-	}	
+	}
 }
 
 //HIDE

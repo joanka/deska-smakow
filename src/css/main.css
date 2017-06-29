@@ -220,17 +220,14 @@ h2 {
   font-size: 3.6rem;
   font-weight: 300; }
 
-a:not(.logo) {
+a:not(.no-hover) {
   color: inherit;
   text-decoration: none;
   outline: 0;
   cursor: pointer;
   border-bottom: 1px solid transparent; }
-  a:not(.logo):hover {
-    color: #87c427;
-    transition: color 0.1s linear;
-    border-bottom: 1px solid #87c427;
-    transition: border-bottom 0.3s linear; }
+  a:not(.no-hover):hover {
+    color: #87c427; }
 
 .visuallyhidden {
   border: 0;
@@ -289,7 +286,10 @@ a:not(.logo) {
       display: inline-block;
       padding-left: 4%; }
     .main-nav ul .active a {
-      color: #87c427; }
+      color: #87c427;
+      transition: color 0.1s linear;
+      border-bottom: 1px solid #87c427;
+      transition: border-bottom 0.3s linear; }
   @media only screen and (max-width: 768px) {
     .main-nav {
       height: 0px;
@@ -418,7 +418,10 @@ a:not(.logo) {
           .nav-opened .main-nav ul li a:hover, .nav-opened .main-nav ul li a:focus {
             color: #87c427; }
       .nav-opened .main-nav ul .active a {
-        color: #87c427; } }
+        color: #87c427;
+        transition: color 0.1s linear;
+        border-bottom: 1px solid #87c427;
+        transition: border-bottom 0.3s linear; } }
 
 #map {
   height: 50vh;

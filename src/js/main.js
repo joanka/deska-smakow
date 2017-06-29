@@ -77,18 +77,18 @@ $(document).ready(function() {
   // Image change on hover
   $(".img-first img").on({
     "mouseenter":function() {
-      $(this).attr('src', '../img/pyszne-logo-h.jpg');
+      $(this).attr('src', 'img/pyszne-logo-h.jpg');
     },
     "mouseleave": function() {
-      $(this).attr('src','../img/pyszne-logo.png');
+      $(this).attr('src','img/pyszne-logo.png');
     }
   });
   $(".img-second img").on({
     "mouseenter":function() {
-      $(this).attr('src', '../img/pizza-portal-h.jpg');
+      $(this).attr('src', 'img/pizza-portal-h.jpg');
     },
     "mouseleave": function() {
-      $(this).attr('src','../img/pizza-portal.png');
+      $(this).attr('src','img/pizza-portal.png');
     }
   });
 
